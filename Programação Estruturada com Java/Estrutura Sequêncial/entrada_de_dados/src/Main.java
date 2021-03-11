@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		//ENTRADA DE DADOS É QUANDO O USUÁRIO DIGITA VALORES QUE SERÃO ARMAZENADOS NO PROGRAMA.
+		//ESPECIFICAMENTE NAS VARIÁVEIS QUE SERÃO TRABALHADAS.
+		
+		//PARA ENTRADA DE DADOS, INSTANCIAMOS UM OBJETO DO TIPO "Scanner"
+		
+		//INSTANCIANDO O OBJETO DO TIPO Scanner:
+		Scanner sc = new Scanner(System.in);
+		//ESSE OBJETO PRECISA SER "ENCERRADO" QUANDO NÃO PRECISARMOS USAR MAIS O MESMO.
+	
+		
+		String x;
+		//CRIAMOS UMA VARIÁVEL DO TIPO STRING E PRECISAMOS SOLICITAR AO USUÁRIO UM VALOR.
+		//COMO QUEREMOS QUE A VARIÁVEL "x" RECEBA O VALOR INFORMADO, REALIZAMOS A SEGUINTE ATRIBUIÇÃO:
+		
+		System.out.print("Digite um valor: ");
+		x = sc.nextLine();
+		
+		//EXISTE UM TIPO DIFERENTE DE sc.next() PARA CADA TIPO DE VARIÁVEL:
+		//sc.next() - RECEBE OS VALORES DIGITADOS EM GERAL
+		//sc.nextINT() - INTEIROS
+		//sc.nextDOUBLE() - DOUBLE
+		//sc.nextCHAR() - CARACTERES
+		//sc.nextLine() - LÊ ATÉ A PRÓXIMA LINHA
+		
+		
+		
+		//DEPOIS QUE A VARIÁVEL ARMAZENOU O VALOR, BASTA APENAS REALIZAR A TRATATIVA DESEJADA.
+		//NESTE CASO, IREMOS APENAS IMPRIMIR ELA:
+		
+		System.out.println("O seu nome é: " + x);
+		
+		
+		//ENCERRANDO O OBJETO "Scanner":
+		sc.close();
+
+	}
+
+}
